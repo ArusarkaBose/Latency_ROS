@@ -16,8 +16,6 @@ Measure local environment or server delays with the help of Latency tests.
 ### Publisher-Subscriber Setup:
 Run **timer.py** followed by **time_listener.py**
 
-</br>
-
 ---    
 #### Algorithm:
 1. **timer.py** initializes a `node` and subsequently a `publisher` on the topic `chatter`
@@ -41,8 +39,6 @@ Run **timer.py** followed by **time_listener.py**
 ### Server-Client Setup :
 Run **latencycheckserver.py** followed by **latencycheckclient.py**
 
-</br>
-
 ---
 #### Algorithm:
 1.  Create a **server** node and a **client** node
@@ -64,8 +60,6 @@ Run the **usb-cam ros node** using the command:
     rosrun usb_cam_ usb_cam_node __pixel_format:= yuyv
 
 Open a separate shell and execute the script **usbcam_latency_sendback.py**.
-
-</br>
 
 ---
 #### Algorithm:
