@@ -42,3 +42,19 @@ Run **latencycheckserver.py** followed by **latencycheckclient.py**
 4. The **client** node measures the difference between its `rostime` at the instant of receipt of the **server** `response` and the `rostime` returned as `response` by the **server** (which is equal to the `rostime` of the **client** at the instant of sending the `service request`)
 
 ---
+
+## Latency Checker for Images :
+### Using USB Cam:
+Run the **usb-cam ros node** using the command:
+
+    rosrun usb_cam_ usb_cam_node __pixel_format:= yuyv
+
+Open a separate shell and execute the script **usbcam_latency_sendback.py**.
+
+---
+#### Algorithm:
+1. Initialize a **subscriber** to the topic on which the `usb_cam node` publishes
+2. In the `callback function`, extract the `rostime` of the setup environment at the instant of publishing of the `usb_cam` image, from the `header stamp` of the image
+3. Subtract the same from the current `rostime` of the **subscriber** node
+
+---
