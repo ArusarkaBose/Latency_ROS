@@ -1,0 +1,5 @@
+sensor_msgs/Image query_image
+time query_time
+---
+sensor_msgs/Image return_image
+time return_time
