@@ -3,12 +3,12 @@
 
 Measure local environment or server delays with the help of Latency tests
 
-1. **Latency checker for String messages**
-   * **Publisher-Subscriber Setup**
-   * **Server-Client Setup**
-2. **Latency checker for images**
-   * **Using USB Cam**
-   * **Server-Client Setup**
+1. **[Latency checker for String messages](https://github.com/ArusarkaBose/Latency_ROS/blob/master/README.md#latency-checker-for-string-messages-)**
+   * **[Publisher-Subscriber Setup](https://github.com/ArusarkaBose/Latency_ROS/blob/master/README.md#publisher-subscriber-setup)**
+   * **[Server-Client Setup](https://github.com/ArusarkaBose/Latency_ROS/blob/master/README.md#server-client-setup-)**
+2. **[Latency checker for images](https://github.com/ArusarkaBose/Latency_ROS/blob/master/README.md#latency-checker-for-images-)**
+   * **[Using USB Cam](https://github.com/ArusarkaBose/Latency_ROS/blob/master/README.md#using-usb-cam)**
+   * **[Server-Client Setup](https://github.com/ArusarkaBose/Latency_ROS/blob/master/README.md#server-client-setup)**
 
 ## Latency Checker for String Messages :
 ### Publisher-Subscriber Setup:
