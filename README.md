@@ -1,7 +1,7 @@
 # Latency_ROS
 **Latency measurements for ROS**  
 
-Measure local environment or server delays with the help of Latency tests
+Measure local environment or server delays with the help of Latency tests.
 
 1. **[Latency checker for String messages](https://github.com/ArusarkaBose/Latency_ROS/blob/master/README.md#latency-checker-for-string-messages-)**
    * **[Publisher-Subscriber Setup](https://github.com/ArusarkaBose/Latency_ROS/blob/master/README.md#publisher-subscriber-setup)**
@@ -10,9 +10,13 @@ Measure local environment or server delays with the help of Latency tests
    * **[Using USB Cam](https://github.com/ArusarkaBose/Latency_ROS/blob/master/README.md#using-usb-cam)**
    * **[Server-Client Setup](https://github.com/ArusarkaBose/Latency_ROS/blob/master/README.md#server-client-setup)**
 
+</br></br></br>
 ## Latency Checker for String Messages :
+
 ### Publisher-Subscriber Setup:
 Run **timer.py** followed by **time_listener.py**
+
+</br>
 
 ---    
 #### Algorithm:
@@ -32,8 +36,12 @@ Run **timer.py** followed by **time_listener.py**
 
 ---
 
+</br></br>
+
 ### Server-Client Setup :
 Run **latencycheckserver.py** followed by **latencycheckclient.py**
+
+</br>
 
 ---
 #### Algorithm:
@@ -47,6 +55,8 @@ Run **latencycheckserver.py** followed by **latencycheckclient.py**
 
 ---
 
+</br></br>
+
 ## Latency Checker for Images :
 ### Using USB Cam:
 Run the **usb-cam ros node** using the command:
@@ -54,6 +64,8 @@ Run the **usb-cam ros node** using the command:
     rosrun usb_cam_ usb_cam_node __pixel_format:= yuyv
 
 Open a separate shell and execute the script **usbcam_latency_sendback.py**.
+
+</br>
 
 ---
 #### Algorithm:
@@ -65,8 +77,13 @@ Open a separate shell and execute the script **usbcam_latency_sendback.py**.
 
 ---
 
+</br></br>
+
 ### Server-Client Setup:
 Run **image_latency_server.py** followed by **image_latency_client.py**
+
+---
+#### Algorithm:
 1.  Create a **server** node and a **client** node
 
 2.  The client node gets a frame from the webcam through OpenCV, converts the frame to a `ros-image` and sends it, along with its `rostime`, as a `request` to the **server** node 
