@@ -54,13 +54,18 @@ if __name__ == "__main__":
     x=np.arange(1,len(y)+1,1)
     yerr=[np.std(latencies) for latencies in latency_bursts]
 
-    latency_ROS1=dict()
-    latency_ROS1["y"]=y
-    latency_ROS1["x"]=x.tolist()
-    latency_ROS1["yerr"]=yerr
+"""
+    In order to display ROS1 and ROS2 latencies on the same plot, uncomment the below lines which save the
+    latency information in a json file.
+"""
 
-    with open('latency_ROS1.json','w+') as json_file:
-        json.dump(latency_ROS1,json_file)
+    # latency_ROS1=dict()
+    # latency_ROS1["y"]=y
+    # latency_ROS1["x"]=x.tolist()
+    # latency_ROS1["yerr"]=yerr
+
+    # with open('latency_ROS1.json','w+') as json_file:
+    #     json.dump(latency_ROS1,json_file)
     
 
     fig_handle=plt.figure()
