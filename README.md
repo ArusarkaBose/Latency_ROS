@@ -87,3 +87,7 @@ Run **image_latency_server.py** followed by **image_latency_client.py**
 5. The **client** node measures the difference between its `rostime` at the instant of receipt of the **server** `response` and the `rostime` returned as part of the `response` by the **server** (which is equal to the `rostime` of the **client** at the instant of sending the `service request`)
 ---
 
+</br>
+
+#### Note:
+In order to plot both ROS1 and [ROS2](https://github.com/ArusarkaBose/Latency_ROS2) latency graphs on a single plot, follow instructions in `latencycheckclient.py`
