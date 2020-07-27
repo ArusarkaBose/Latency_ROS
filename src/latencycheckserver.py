@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 
-from codebase.srv import LatencyCheck
-from codebase.srv import LatencyCheckRequest
-from codebase.srv import LatencyCheckResponse
+from Latency_ROS.srv import LatencyCheck
+from Latency_ROS.srv import LatencyCheckRequest
+from Latency_ROS.srv import LatencyCheckResponse
 
 import rospy
 
 def handle_time(req):
     print ("Query time = ",req.query_time)
-    return LatencyCheckResponse(req.query_time)
+    return LatencyCheckResponse(req.query_time,req.query_load)
 
 def time():
     rospy.init_node('latency_check')

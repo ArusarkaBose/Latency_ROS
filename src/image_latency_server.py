@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-from codebase.srv import ImageLatency
-from codebase.srv import ImageLatencyRequest
-from codebase.srv import ImageLatencyResponse
+from Latency_ROS.srv import ImageLatency
+from Latency_ROS.srv import ImageLatencyRequest
+from Latency_ROS.srv import ImageLatencyResponse
 
 import rospy
 

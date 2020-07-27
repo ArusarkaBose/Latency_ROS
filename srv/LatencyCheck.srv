@@ -1,3 +1,5 @@
 time query_time
+string query_load
 ---
 time return_time
+string return_load
